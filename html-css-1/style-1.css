@@ -1,0 +1,64 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.sections{
+    margin: 10px;
+    padding: 10px;
+}
+
+#siteHead {
+    background-color: rgb(248, 151, 164);
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#htmlPic {
+    height: auto;
+    width: 170px;
+    float: left;
+}
+
+.htmlBox {
+    display: inline-block;
+    border: black 5px dotted;
+    
+} 
+.cssBox {
+    display: inline-block;
+    border: black 5px dotted;
+    
+}
+#cssPic {
+    height: auto;
+    width: 170px;
+    float: right;
+}
+.menu {
+    display: inline;
+    margin-right: 40px;
+} 
+.headBar {
+    /* margin-left: calc(100vw - 200px) ;
+    margin-left: 550px; */
+}
+
+.navBar {
+    display: inline-block;
+}
+
+h1 {
+    display: inline-block;
+    
+   
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
