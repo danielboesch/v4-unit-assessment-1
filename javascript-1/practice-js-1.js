@@ -173,7 +173,13 @@ function bigOrSmall(arr) {
 //CODE HERE
 
 function arrayReverser(arr){
-  let reversed = []
+  let reversed = [];
+
+  for (let i = arr.length - 1; i >= 0 ; i--){
+    reversed.push(arr[i]);
+  }
+  return reversed
+
 }
 
 
@@ -202,16 +208,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global',  'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -221,6 +227,11 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+
+ function firstItem(arr, cb) {
+   cb(arr[0])
+ }
+
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -232,6 +243,15 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 
 //CODE HERE
 
+function isItBob(obj, cb){
+  if (obj.name === 'Bob'){
+    cb(true);
+  } if (obj.name != 'Bob'){
+   cb(false) 
+  }
+    
+}
+
 //////////////////PROBLEM 17////////////////////
 /*
   Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.  
@@ -240,6 +260,15 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+
+function giveMeDoubles(arr, cb){
+  let arr2 = [];
+
+  for (let i = 0; i < arr.length; i++){
+    arr2.push(arr[i] * 2)
+  }
+  cb(arr2)
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -267,3 +296,17 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+
+function carFactory(make, model, year){
+  let obj = {
+    make: make,
+    model: model,
+    year: year,
+  }
+  if (obj.year >= 2018){
+    obj.isNew = true
+  } if (obj.year < 2018){
+    obj.isNew = false
+  }
+  return obj
+}
