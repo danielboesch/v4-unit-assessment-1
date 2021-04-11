@@ -11,13 +11,16 @@
 
 //CODE HERE
 
+let gitDefinition = "Git is a program on your computer that saves versions of your projects"
+
 //////////////////PROBLEM 2////////////////////
 /*
-    Create a variable called 'gitHubDefinition'.  
-    It should be a string containing your best definition of what GitHub is.
+Create a variable called 'gitHubDefinition'.  
+It should be a string containing your best definition of what GitHub is.
 */
 
 //CODE HERE
+let gitHubDefinition = "GitHub is a website that stores versions of your projects and lets others (or yourself) access those versions."
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -35,6 +38,13 @@
 
 //CODE HERE
 
+let init = {
+    description: 'creates your repository',
+    code: 'git init'
+}
+
+
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -43,6 +53,11 @@
 
 //CODE HERE
 
+let clone = {
+    description: 'creates a copy of your repository',
+    code: 'git clone'
+}
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,6 +65,11 @@
 */
 
 //CODE HERE
+
+let status = {
+    description: 'tells you the status of your repository',
+    code: 'git status'
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
