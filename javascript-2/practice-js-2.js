@@ -54,7 +54,7 @@ let init = {
 //CODE HERE
 
 let clone = {
-    description: 'creates a copy of your repository',
+    description: 'creates a copy of a repository',
     code: 'git clone'
 }
 
@@ -67,7 +67,7 @@ let clone = {
 //CODE HERE
 
 let status = {
-    description: 'tells you the status of your repository',
+    description: 'tells you the status of your staged repository and which files will be committed',
     code: 'git status'
 }
 
@@ -79,6 +79,11 @@ let status = {
 
 //CODE HERE
 
+let add = {
+    description: 'adds a version of your edits to a staging area before you commit them',
+    code: 'git add .'
+}
+
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -86,6 +91,11 @@ let status = {
 */
 
 //CODE HERE
+
+let commit = {
+    description: 'moves a version of your edits from the staging area to the assigned directory',
+    code: 'git commit -m'
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -95,6 +105,11 @@ let status = {
 
 //CODE HERE
 
+let addRemote = {
+    description: 'creates a new remote origin for your repository',
+    code: 'git remote add origin'
+}
+
 //////////////////PROBLEM 9////////////////////
 /*
     Create an object called 'push' with 'description' and 'code' properties 
@@ -102,3 +117,8 @@ let status = {
 */
 
 //CODE HERE
+
+let push = {
+    description: 'sends your commit to GitHub',
+    code: 'git push'
+}
